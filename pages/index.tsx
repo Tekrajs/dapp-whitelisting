@@ -113,6 +113,7 @@ export default function Home() {
                 signer
             );
             // Get the address associated to the signer which is connected to MetaMask
+            // @ts-ignore
             const address = await signer?.getAddress();
             console.log("Address", address);
             // call the whitelistedAddresses from the contract
